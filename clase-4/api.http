@@ -1,0 +1,33 @@
+### Get all movies
+GET http://localhost:1234/movies
+
+### Get a movie by id
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+
+### Get all movie by gender
+GET http://localhost:1234/movies?genre=action
+
+### Create a movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": 565,
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm4282021376.jpg",
+    "genre": [
+        "Fantasy"
+        ],
+    "rate": 9.2
+}
+
+### Update a movie
+
+PATCH http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+Content-Type: application/json
+
+{
+    "year": 1973
+}
