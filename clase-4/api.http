@@ -12,7 +12,7 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": 565,
+    "title": "Una pelicula nueva",
     "year": 1972,
     "director": "Francis Ford Coppola",
     "duration": 175,
@@ -23,11 +23,13 @@ Content-Type: application/json
     "rate": 9.2
 }
 
-### Update a movie
+### Delete a movie
+DELETE http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
 
-PATCH http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+### Update a movie
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
 
 {
-    "year": 1973
+    "year": 1994
 }
